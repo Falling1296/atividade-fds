@@ -13,5 +13,5 @@ Público-alvo
 Estudantes do 6º ano do Ensino Fundamental, com idades aproximadas entre 11 e 12 anos.
 
 Integrantes
-Lucas Loés
+Lucas Lopes
 Guilherme Bielinki
