@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz da Matemática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🎮 Quiz da Matemática</h1>
+    <p>Aprenda brincando!</p>
+  </header>
+
+  <main class="caixa">
+    <section id="inicio">
+      <h2>Bem-vindo ao desafio!</h2>
+      <p>Responda a 5 perguntas de Matemática e teste seus conhecimentos.</p>
+      <button id="comecar">Começar jogo</button>
+    </section>
+
+    <section id="jogo" hidden>
+      <p id="progresso"></p>
+      <h2 id="pergunta"></h2>
+      <div id="alternativas"></div>
+      <p id="feedback" aria-live="polite"></p>
+      <button id="proxima" hidden>Próxima pergunta</button>
+    </section>
+
+    <section id="resultado" hidden>
+      <h2>🏆 Fim do jogo!</h2>
+      <p id="pontuacao"></p>
+      <p id="mensagem"></p>
+      <button id="reiniciar">Jogar novamente</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto escolar de Jogos Digitais — 6º ano</p>
+  </footer>
+</body>
+</html>
