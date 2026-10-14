@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin: 20px 0 30px;
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 #6c4ab6;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.caixa {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  background: white;
+  border: 5px solid white;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 12px 30px #00000025;
+}
+
+h2 {
+  color: #6c4ab6;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  font: bold 1rem inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#comecar,
+#proxima,
+#reiniciar {
+  background: linear-gradient(135deg, #ff8a00, #ffca28);
+  color: #4a2c00;
+  box-shadow: 0 5px 0 #e58a00;
+  margin-top: 10px;
+}
+
+#comecar:hover,
+#proxima:hover,
+#reiniciar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 0 #e58a00;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+#progresso {
+  padding: 12px;
+  margin-bottom: 25px;
+  background: #e8e0ff;
+  color: #5935a0;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+#alternativas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 25px 0;
+}
+
+#alternativas button {
+  min-height: 60px;
+  background: #f0edff;
+  color: #4d368f;
+  border: 3px solid #d8ccff;
+  overflow-wrap: anywhere;
+}
+
+#alternativas button:hover:not(:disabled) {
+  background: #dcd2ff;
+  border-color: #8e70e8;
+  transform: scale(1.03);
+}
+
+#alternativas button:disabled {
+  color: white;
+  opacity: 1;
+  cursor: default;
+}
+
+#feedback {
+  min-height: 28px;
+  font-weight: bold;
+}
+
+#pontuacao {
+  color: #6c4ab6;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#mensagem {
+  padding: 18px;
+  margin: 20px 0;
+  background: #e8fff0;
+  color: #167744;
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+button:focus-visible {
+  outline: 4px solid #222;
+  outline-offset: 4px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .caixa {
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  #alternativas {
+    grid-template-columns: 1fr;
+  }
+
+  #alternativas button {
+    min-height: 52px;
+  }
+}
